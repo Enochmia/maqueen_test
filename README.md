@@ -24,5 +24,6 @@ To edit this repository in MakeCode.
 <script src="https://makecode.com/gh-pages-embed.js"></script><script>makeCodeRender("{{ site.makecode.home_url }}", "{{ site.github.owner_name }}/{{ site.github.repository_name }}");</script>
 ##
 
-* Code Editor link ##
+* Code Editor link
+##
 [Link](https://makecode.microbit.org/#editor)
