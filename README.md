@@ -25,4 +25,4 @@ To edit this repository in MakeCode.
 ##
 
 * Code Editor link
-<script src="https://makecode.microbit.org/#editor"></script>
+[Link](https://makecode.microbit.org/#editor)
