@@ -1,28 +1,14 @@
 
 > Open this page at [https://enochmia.github.io/maqueen_test/](https://enochmia.github.io/maqueen_test/)
 
-## Use as Extension
-
-This repository can be added as an **extension** in MakeCode.
-
-* open [https://makecode.microbit.org/](https://makecode.microbit.org/)
-* click on **New Project**
-* click on **Extensions** under the gearwheel menu
-* search for **https://github.com/enochmia/maqueen_test** and import
-
-## Edit this project
-
-To edit this repository in MakeCode.
-
-* open [https://makecode.microbit.org/](https://makecode.microbit.org/)
-* click on **Import** then click on **Import URL**
-* paste **https://github.com/enochmia/maqueen_test** and click import
-
-#### Metadata (used for search, rendering)
-
-* for PXT/microbit
-<script src="https://makecode.com/gh-pages-embed.js"></script><script>makeCodeRender("{{ site.makecode.home_url }}", "{{ site.github.owner_name }}/{{ site.github.repository_name }}");</script>
-
 ## Code Editor link
 
 * [Link](https://makecode.microbit.org/#editor)
+
+## Developed list
+
+* Code which lead robot to follow learned person's face via huskylens's face recognition algorithm - Couldn't test it, cuz lack of power
+* Code which follow black line via Maqueen bot's line tracking sense - Unstable and lack of ability to follow right angle lines
+
+* As a writer : Need to develop more stable code and more content to teach for 2 hours. And also ppt, mentor recruiting, updating microbti main board firmware and huskylens' firmware-took some while-, and practice for errors that might occur during event.
+  Those are everything I think. :)
