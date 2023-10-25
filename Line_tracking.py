@@ -12,6 +12,10 @@ while True: #0 is when sensor light is off
 
 """ #V2
 
+def mf():
+  maqueen.motor_run(maqueen.Motors.All, maqueen.Dir.CW, 25)
+
+
 def t_left():
   maqueen.motor_run(maqueen.Motors.M1, maqueen.Dir.CW, 25)
   maqueen.motor_run(maqueen.Motors.M2, maqueen.Dir.CW, 50)
