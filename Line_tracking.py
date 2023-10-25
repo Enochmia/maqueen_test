@@ -25,6 +25,11 @@ while True: #0 is when sensor light is off
 """
 
 """ #V3
+def left_turn():
+  maqueen.motor_run(maqueen.Motors.M1, maqueen.Dir.CW, 25)
+def check():
+  for i in range 
+
 while True: #0 is when sensor light is off
   maqueen.motor_run(maqueen.Motors.All, maqueen.Dir.CW, 50)
   
