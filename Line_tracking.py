@@ -29,6 +29,7 @@ def mf():
   maqueen.motor_run(maqueen.Motors.All, maqueen.Dir.CW, 50)
   if maqueen.read_patrol(maqueen.Patrol.PATROL_RIGHT) == 0 or maqueen.read_patrol(maqueen.Patrol.PATROL_LEFT) == 0:
     maqueen.motor_run(maqueen.Motors.All, maqueen.Dir.CW, 0)
+    return break
   else:
     basic.pause(30)
     maqueen.motor_run(maqueen.Motors.All, maqueen.Dir.CW, 0)
