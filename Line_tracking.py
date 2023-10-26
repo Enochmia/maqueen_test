@@ -13,7 +13,9 @@ while True: #0 is when sensor light is off
 """ #V2
 
 def mf():
-  maqueen.motor_run(maqueen.Motors.All, maqueen.Dir.CW, 25)
+  maqueen.motor_run(maqueen.Motors.All, maqueen.Dir.CW, 50)
+  if maqueen.read_patrol(maqueen.Patrol.PATROL_RIGHT) == 0 or 
+basic.pause(30)
 
 
 def t_left():
@@ -40,15 +42,37 @@ while True: #0 is when sensor light is off
 """
 
 """ #V3
-def left_turn():
+def mf():
+  maqueen.motor_run(maqueen.Motors.All, maqueen.Dir.CW, 50)
+  if maqueen.read_patrol(maqueen.Patrol.PATROL_RIGHT) == 0 or maqueen.read_patrol(maqueen.Patrol.PATROL_LEFT) == 0:
+    maqueen.motor_run(maqueen.Motors.All, maqueen.Dir.CW, 0)
+  else:
+    basic.pause(30)
+    maqueen.motor_run(maqueen.Motors.All, maqueen.Dir.CW, 0)
+
+
+def t_left():
   maqueen.motor_run(maqueen.Motors.M1, maqueen.Dir.CW, 25)
-def check():
-  for i in range 
+  maqueen.motor_run(maqueen.Motors.M2, maqueen.Dir.CW, 50)
+  basic.pause(20)
+  maqueen.motor_run(maqueen.Motors.All, maqueen.Dir.CW, 0)
+
+def t_right():
+  maqueen.motor_run(maqueen.Motors.M1, maqueen.Dir.CW, 25)
+  maqueen.motor_run(maqueen.Motors.M2, maqueen.Dir.CW, 50)
+  basic.pause(20)
+  maqueen.motor_run(maqueen.Motors.All, maqueen.Dir.CW, 0)
+
+def check_1():
+    
+    maqueen.motor_run(maqueen.Motors.All, maqueen.Dir.CW, 50)
+    
+
 
 while True: #0 is when sensor light is off
   maqueen.motor_run(maqueen.Motors.All, maqueen.Dir.CW, 50)
   
-  if maqueen.read_patrol(maqueen.Patrol.PATROL_LEFT) == 0 and maqueen.read_patrol(McQueen.Patrol.PATROL_RIGHT) == 1:
+  if maqueen.read_patrol(maqueen.Patrol.PATROL_LEFT) == 0 and maqueen.read_patrol(Maqueen.Patrol.PATROL_RIGHT) == 1:
     maqueen.motor_run(maqueen.Motors.M1, maqueen.Dir.CW, 50)
     maqueen.motor_run(maqueen.Motors.M2, maqueen.Dir.CW, 0)
   elif maqueen.read_patrol(maqueen.Patrol.PATROL_RIGHT) == 0 and maqueen.read_patrol(McQueen.Patrol.PATROL_LEFT) == 1:
