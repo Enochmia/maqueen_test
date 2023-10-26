@@ -46,10 +46,20 @@ def t_right():
   basic.pause(5)
   maqueen.motor_run(maqueen.Motors.All, maqueen.Dir.CW, 0)
 
-def t_():
-  l = maqueen.Motors.M1
-  r = maqueen.Motors.M2
-
+def t_(a):
+  if a == "l" or a == "L":
+    maqueen.motor_run(maqueen.Motors.M1, maqueen.Dir.CW, 0)
+    maqueen.motor_run(maqueen.Motors.M2, maqueen.Dir.CW, 50)
+    basic.pause(10)
+    maqueen.motor_run(maqueen.Motors.All, maqueen.Dir.CW, 0)
+  elif a == "r" or a == "R":
+    maqueen.motor_run(maqueen.Motors.M2, maqueen.Dir.CW, 0)
+    maqueen.motor_run(maqueen.Motors.M1, maqueen.Dir.CW, 50)
+    basic.pause(5)
+    maqueen.motor_run(maqueen.Motors.All, maqueen.Dir.CW, 0)
+  else:
+    pass
+  
 
 def check_1():
   for i in range(10)
