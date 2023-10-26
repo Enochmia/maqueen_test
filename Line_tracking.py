@@ -47,7 +47,8 @@ def t_right():
   maqueen.motor_run(maqueen.Motors.All, maqueen.Dir.CW, 0)
 
 def check_1():
-    for i in range(10)
+  for i in range(10)
+    
     maqueen.motor_run(maqueen.Motors.All, maqueen.Dir.CW, 50)
     
 
