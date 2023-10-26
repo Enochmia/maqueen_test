@@ -12,6 +12,7 @@ while True: #0 is when sensor light is off
 
 """ #V2
   
+
   if maqueen.read_patrol(maqueen.Patrol.PATROL_LEFT) == 0:
     maqueen.motor_run(maqueen.Motors.M1, maqueen.Dir.CW, 50)
     maqueen.motor_run(maqueen.Motors.M2, maqueen.Dir.CW, 0)
