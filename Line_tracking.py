@@ -34,6 +34,10 @@ def mf():
     basic.pause(30)
     maqueen.motor_run(maqueen.Motors.All, maqueen.Dir.CW, 0)
 
+def mb():
+  maqueen.motor_run(maqueen.Motors.All, maqueen.Dir.CCW, 50)
+  basic.pause(30)
+  maqueen.motor_run(maqueen.Motors.All, maqueen.Dir.CCW, 0)
 
 def t_left():
   maqueen.motor_run(maqueen.Motors.M1, maqueen.Dir.CW, 0)
@@ -66,6 +70,7 @@ def check_1():
   for i in range(10)
     t_right
     mf()
+    mb()
 
 
 while True: #0 is when sensor light is off
