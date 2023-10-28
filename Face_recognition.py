@@ -9,14 +9,14 @@ while True:
     
     maqueen.motor_run(maqueen.Motors.All, maqueen.Dir.CW, 0) #base speed both motors
     
-    if huskylens.is_appear(1, HUSKYLENSResultType_t.HUSKYLENS_RESULT_BLOCK) = True: #getting coordinates of box? maybe
+    if huskylens.is_appear(1, HUSKYLENSResultType_t.HUSKYLENS_RESULT_BLOCK) == True: #getting coordinates of box? maybe
         on_forever()
     
-        if 0 < x < 160: #following face
+        if 0 <= x <= 159: #following face
             x = 160-x
             x = x/16
             maqueen.motor_run(maqueen.Motors.M1, maqueen.Dir.CW, 50-x) #M1 is left side servo
-        elif 0 < x <=320:
+        elif 159 < x <=319:
             x = x - 160
             x = x/16
             maqueen.motor_run(maqueen.Motors.M2, maqueen.Dir.CW, 50-x) #M2 is left side servo
