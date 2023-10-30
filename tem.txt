@@ -1,0 +1,11 @@
+1. https://github.com/Enochmia/maqueen_test
+2. 맨 아래쪽 Face_recognition, Line_tracking 링크 들어가서 코드 봐보고
+3. 대강적인 설명은 작성해둠 *대강 작동원리 이해하면 가도 됩니다.
+*만약에 로봇으로 테스트하고 싶으면 뒤에서 가져다가 실행해보면 됩니다.
+**로봇에다가 명령어 전송하는 사이트는 Code Editor link 부분의 링크 참고
+*Line_tracking은 python으로도 잘 작동되는데
+*Face_recognition은 python으로 작동이 잘 안 돼서 
+**Javascript로 작동되게 해놨어요. - JS도 글케 문법이 다르진 않아요.
+*다 작동만 되는 코드라 깔끔하진 않을 겁니다.
+*이건 그냥 밑동이 되는 코드라서 수요일 당일에는 조금 더 다를 수도 있어요.
+**가장 직관적으로 이해하려면 그냥 로봇 가져와서 실행시켜봐도 돼요.
