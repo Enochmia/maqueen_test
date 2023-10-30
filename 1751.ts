@@ -10,6 +10,7 @@ let xco: number; //xco를 숫자라 선언(이건 보통 TS에서 하는 행동�
 let coor: number; //coor을 숫자라 선언(이건 보통 TS에서 하는 행동으로 기억하는데 그래도 혹시 모르니까) - xco를 가공할 떄 활용할 변수 - 안정성을 위해
 let dis: number; //4q4q4q
 li = 0 //li 값 지정
+huskylens.request()
 basic.forever(function () { //함수 지정 - JS는 일케 함수 지정하나봐요 JS는 저도 거의 첨이라
     if (huskylens.getIds() != 0) {
         huskylens.writeLearn1(1)
