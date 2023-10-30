@@ -1,0 +1,12 @@
+while True: #0 is when sensor light is off - 0일 때가 센서 등 꺼짐 상태
+  
+    if maqueen.read_patrol(maqueen.Patrol.PATROL_LEFT) == 0: #왼쪽 선 밟았을 경우 오른쪽 모터만 회전시켜서 회전
+        maqueen.motor_run(maqueen.Motors.M1, maqueen.Dir.CW, 10)
+        maqueen.motor_run(maqueen.Motors.M2, maqueen.Dir.CW, 50)
+    elif maqueen.read_patrol(maqueen.Patrol.PATROL_RIGHT) == 0: #오른쪽 선 밟았을 경우 왼쪽 모터만 회전시켜서 회전
+        maqueen.motor_run(maqueen.Motors.M1, maqueen.Dir.CW, 50)
+        maqueen.motor_run(maqueen.Motors.M2, maqueen.Dir.CW, 10)
+    else:
+        maqueen.motor_run(maqueen.Motors.All, maqueen.Dir.CW, 50)
+
+# maqueen.motor_run(maqueen.Motors.All, maqueen.Dir.CW, 0)
