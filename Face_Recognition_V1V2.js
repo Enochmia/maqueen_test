@@ -30,7 +30,7 @@ basic.forever(function () { //함수 지정 - JS는 일케 함수 지정하나�
         xco = huskylens.readeBox(1, Content1.xCenter) //x 좌표 받아옴
         led.plot(3, 0) //작동 확인용 명령어
         huskylens.clearOSD() //화면 세팅
-        maqueen.motorRun(maqueen.Motors.All, maqueen.Dir.CW, 50) //기본 속도 설정
+        maqueen.motorRun(maqueen.Motors.All, maqueen.Dir.CW, 80) //기본 속도 설정
         if (xco <= 159) { //(320, 240)이 허스키 렌즈 속 좌표 값 - 우리가 필요한건 X 범위기에 160을 기준으로 나눠야함 - 좌측
             maqueen.motorRun(maqueen.Motors.M1, maqueen.Dir.CW, 10) //방향 조정
             maqueen.motorRun(maqueen.Motors.M2, maqueen.Dir.CW, 50) //방향 조정
