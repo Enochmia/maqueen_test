@@ -12,7 +12,7 @@ let dis: number; //4q4q4q
 li = 0 //li 값 지정
 huskylens.request()
 basic.forever(function () { //함수 지정 - JS는 일케 함수 지정하나봐요 JS는 저도 거의 첨이라
-    if (huskylens.getIds() != 0) {
+    if (huskylens.getIds() == 0) {
         huskylens.writeLearn1(1)
     }
     if (li == 0) { //조건 추가 - 아까 li(리밋) 걸려고 한게 이 아래 내용 때문
