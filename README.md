@@ -5,12 +5,7 @@
 
 * [Link](https://makecode.microbit.org/#editor)
 
-## Developed list
-
-* Bit Unstable line tracking code
-* Code that recognizes face and follows to it(?)
-
 ## Code link
 
-* [Face tracking](https://github.com/Enochmia/maqueen_test/blob/master/Face_Recognition_V1V2.js)
-* [Line tracking](https://github.com/Enochmia/maqueen_test/blob/master/Line_Tracking_Simeple_Ver)
+* [Face tracking](https://github.com/Enochmia/maqueen_test/blob/master/final_face.ts)
+* [Line tracking](https://github.com/Enochmia/maqueen_test/blob/master/final_line.py)
